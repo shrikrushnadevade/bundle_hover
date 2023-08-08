@@ -86,7 +86,8 @@ body {
 }
 
 .pair1:hover .rside {
-    background-color: #f0f0f0;
+    background-color: transparent;
+    
 }
 
 .lside select,
@@ -96,8 +97,10 @@ body {
 
 .pair1:hover .lside select,
 .pair1:hover .lside .sico {
-    background-color: #f0f0f0;
+    background-color: transparent;
     display: block;
+    backface-visibility: visible;
+
 }
 
 .discount {
