@@ -30,7 +30,7 @@
                 <div class="flex">
                     <div>
                         <p class="sico">Size</p>
-                        <select id="sizeSelect" onchange="toggleSelect(this, 'sizeSelectOptions')">
+                        <select id="sizeSelect" >
                             <option value="">Size</option>
                             <option value="volvo">s</option>
                         </select>
@@ -41,7 +41,7 @@
                     </div>
                     <div>
                         <p class="sico">Color</p>
-                        <select id="colorSelect" onchange="toggleSelect(this, 'colorSelectOptions')">
+                        <select id="colorSelect">
                             <option value="">Color</option>
                             <option value="volvo">Color</option>
                             <option value="saab">Red</option>
@@ -76,7 +76,7 @@
                 <div class="flex">
                     <div>
                         <p class="sico">Size</p>
-                        <select id="sizeSelect" onchange="toggleSelect(this, 'sizeSelectOptions')">
+                        <select id="sizeSelect" >
                             <option value="">Size</option>
                             <option value="volvo">s</option>
                         </select>
@@ -87,7 +87,7 @@
                     </div>
                     <div>
                         <p class="sico">Color</p>
-                        <select id="colorSelect" onchange="toggleSelect(this, 'colorSelectOptions')">
+                        <select id="colorSelect" >
                             <option value="">Color</option>
                             <option value="volvo">Color</option>
                             <option value="saab">Red</option>
@@ -122,7 +122,7 @@
                 <div class="flex">
                     <div>
                         <p class="sico">Size</p>
-                        <select id="sizeSelect" onchange="toggleSelect(this, 'sizeSelectOptions')">
+                        <select id="sizeSelect" >
                             <option value="">Size</option>
                             <option value="volvo">s</option>
                         </select>
@@ -133,7 +133,7 @@
                     </div>
                     <div>
                         <p class="sico">Color</p>
-                        <select id="colorSelect" onchange="toggleSelect(this, 'colorSelectOptions')">
+                        <select id="colorSelect" >
                             <option value="">Color</option>
                             <option value="volvo">Color</option>
                             <option value="saab">Red</option>
@@ -170,17 +170,6 @@
             <p>@Powered by Pumper</p>
         </div>
         
-        <script>
-            function toggleSelect(selectElement, targetSelectId) {
-                const targetSelect = document.getElementById(targetSelectId);
-                targetSelect.style.display = selectElement.value !== '' ? 'block' : 'none';
-
-                const sicoElements = document.querySelectorAll('.sico');
-                for (const sico of sicoElements) {
-                    sico.classList.toggle('show', selectElement.value !== '');
-                }
-            }
-        </script>
     
     </body>
 </html>
