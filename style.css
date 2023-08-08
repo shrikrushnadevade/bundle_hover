@@ -182,3 +182,7 @@ select {
     display: flex;
     justify-content: end;
 }
+
+.free{
+    color: green;
+}
