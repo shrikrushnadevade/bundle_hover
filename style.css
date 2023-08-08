@@ -58,7 +58,6 @@ body {
 .pair1:hover {
     background-color: #f0f0f0;
     transform: scale(1.1);
-
 }
 
 .lside {
@@ -99,8 +98,6 @@ body {
 .pair1:hover .lside .sico {
     background-color: transparent;
     display: block;
-    backface-visibility: visible;
-
 }
 
 .discount {
@@ -169,12 +166,13 @@ select {
     background-color: rgb(3, 88, 3);
 }
 
-.button h2{
+.button h3{
     color: white;
-    margin-top: 5px;
+    margin-top: 12px;
 }
 
 .Powered{
+    margin-top: 10px;
     width: 73%;
     display: flex;
     justify-content: end;
