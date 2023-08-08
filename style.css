@@ -62,7 +62,6 @@ body {
 
 .lside {
     flex: 1;
-    margin-right: 10px;
 }
 
 .lside select {
