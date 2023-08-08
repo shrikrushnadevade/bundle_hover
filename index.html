@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="title">
+            <fieldset>
+                <legend>Bundle & Save</legend>
+            </fieldset>
+        </div>
+
+        <div class="pair1">
+            <div class="lside">
+                <div class="pair">
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox">
+                    </div>
+                    <div class="dkk">
+                        <p>1 Pair</p>
+                        <h5 class="dkkk">DKK 195.00</h5>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <p class="sico">Size</p>
+                        <select id="sizeSelect" onchange="toggleSelect(this, 'sizeSelectOptions')">
+                            <option value="">Size</option>
+                            <option value="volvo">s</option>
+                        </select>
+                        <select id="sizeSelectOptions">
+                            <option value="">Size</option>
+                            <option value="s">s</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="sico">Color</p>
+                        <select id="colorSelect" onchange="toggleSelect(this, 'colorSelectOptions')">
+                            <option value="">Color</option>
+                            <option value="volvo">Color</option>
+                            <option value="saab">Red</option>
+                        </select>
+                        <select id="colorSelectOptions">
+                            <option value="">Color</option>
+                            <option value="volvo">Color</option>
+                            <option value="saab">Orange</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="rside">
+                <div class="discount">
+                    <h5 class="Popular">Most Popular</h5>
+                    <h4 class="off" id="discountH5">50% OFF</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="pair1">
+            <div class="lside">
+                <div class="pair">
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox">
+                    </div>
+                    <div class="dkk">
+                        <p>2 Pair</p>
+                        <h5 class="dkkk">DKK 345.00</h5>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <p class="sico">Size</p>
+                        <select id="sizeSelect" onchange="toggleSelect(this, 'sizeSelectOptions')">
+                            <option value="">Size</option>
+                            <option value="volvo">s</option>
+                        </select>
+                        <select id="sizeSelectOptions">
+                            <option value="">Size</option>
+                            <option value="s">s</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="sico">Color</p>
+                        <select id="colorSelect" onchange="toggleSelect(this, 'colorSelectOptions')">
+                            <option value="">Color</option>
+                            <option value="volvo">Color</option>
+                            <option value="saab">Red</option>
+                        </select>
+                        <select id="colorSelectOptions">
+                            <option value="">Color</option>
+                            <option value="volvo">Color</option>
+                            <option value="saab">Orange</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="rside">
+                <div class="discount">
+                    <h5 class="Popular">Most Popular</h5>
+                    <h4 class="off" id="discountH5">40% OFF</h4>
+                </div>
+            </div>
+        </div>
+    
+        <div class="pair1">
+            <div class="lside">
+                <div class="pair">
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox">
+                    </div>
+                    <div class="dkk">
+                        <p>3 Pair</p>
+                        <h5 class="dkkk">DKK 528.00</h5>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <p class="sico">Size</p>
+                        <select id="sizeSelect" onchange="toggleSelect(this, 'sizeSelectOptions')">
+                            <option value="">Size</option>
+                            <option value="volvo">s</option>
+                        </select>
+                        <select id="sizeSelectOptions">
+                            <option value="">Size</option>
+                            <option value="s">s</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="sico">Color</p>
+                        <select id="colorSelect" onchange="toggleSelect(this, 'colorSelectOptions')">
+                            <option value="">Color</option>
+                            <option value="volvo">Color</option>
+                            <option value="saab">Red</option>
+                        </select>
+                        <select id="colorSelectOptions">
+                            <option value="">Color</option>
+                            <option value="volvo">Color</option>
+                            <option value="saab">Orange</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="rside">
+                <div class="discount">
+                    <h5 class="Popular">Most Popular</h5>
+                    <h4 class="off" id="discountH5">60% OFF</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="free">
+                <h4>Free 2 Day Shipping</h4>
+            </div>
+            <div class="total">
+                <h4 >Total: DKK 360.00</h4>
+            </div>
+        </div>
+    
+        <div class="button">
+            <h2>+ Add to Cart</h2>            
+        </div>
+        <div class="Powered">
+            <p>@Powered by Pumper</p>
+        </div>
+        
+        <script>
+            function toggleSelect(selectElement, targetSelectId) {
+                const targetSelect = document.getElementById(targetSelectId);
+                targetSelect.style.display = selectElement.value !== '' ? 'block' : 'none';
+
+                const sicoElements = document.querySelectorAll('.sico');
+                for (const sico of sicoElements) {
+                    sico.classList.toggle('show', selectElement.value !== '');
+                }
+            }
+        </script>
+    
+    </body>
+</html>

@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 700px;
+    width: 50%;
+    text-align: center;    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    width: 73%;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title fieldset {
+    border: 1px solid #ccc;
+    border-width: 1px 0 0 0;
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.title legend {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pair1 {
+    margin-top: 5px;
+    height: 120px;
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin-bottom: 20px;
+    border: 1px solid #d7c3c3;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.pair1:hover {
+    background-color: #f0f0f0;
+}
+
+.lside {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.lside select {
+    border: 1px solid #ccc;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+.rside {
+    flex: 1;
+    text-align: center;
+}
+
+.rside h5 {
+    display: none;
+}
+
+.pair1:hover .rside h5 {
+    display: block;
+}
+
+.pair1:hover .rside {
+    background-color: #f0f0f0;
+}
+
+.lside select,
+.lside .sico {
+    display: none;
+}
+
+.pair1:hover .lside select,
+.pair1:hover .lside .sico {
+    background-color: #f0f0f0;
+    display: block;
+}
+
+.discount {
+    margin-top: 5px;
+}
+
+.Popular {
+    margin-bottom: 3px;
+    color: rgb(7, 174, 7);
+}
+
+.off {
+    margin-left: 20px;
+}
+
+.pair {
+    margin-top: 5px;
+    justify-content: center;
+    display: flex;
+}
+
+.flex {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+select {
+    height: 25px;
+    width: 80px;
+    margin: 5px;
+}
+
+.checkbox {
+    margin-top: 15px;
+    margin-left: -100px;
+}
+
+.dkkk {
+    margin-top: 2px;
+    margin-left: 30px;
+}
+
+.dkk {
+    margin-top: 5px;
+}
+
+.sico {
+    margin-top: 7px;
+    margin-left: -50px;
+    margin-bottom: 5px;
+}
+
+
+.bottom{
+    height: 50px;
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    margin-top: 20px;
+    height: 50px;
+    width: 73%;
+    background-color: rgb(3, 88, 3);
+}
+
+.button h2{
+    color: white;
+    margin-top: 5px;
+}
+
+.Powered{
+    width: 73%;
+    display: flex;
+    justify-content: end;
+}
