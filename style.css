@@ -133,7 +133,7 @@ select {
 
 .checkbox {
     margin-top: 15px;
-    margin-left: -100px;
+    margin-left: -35px;
 }
 
 .dkkk {
@@ -141,7 +141,12 @@ select {
     margin-left: 30px;
 }
 
+.dk{
+    margin-left: -5px;
+}
+
 .dkk {
+    margin-left: -15px;
     margin-top: 5px;
 }
 
